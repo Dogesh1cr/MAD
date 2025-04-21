@@ -1,0 +1,255 @@
+Absolutely! Here are concise and clear answers to all the questions grouped by topic for your Mobile Application Development Viva (MADPWA):
+
+
+---
+
+Flutter Concepts
+
+1. What is Dart and how is it used in Flutter?
+Dart is a client-optimized programming language developed by Google. Flutter uses Dart to build UI and manage state.
+
+
+2. What are the main features of Flutter?
+
+Hot reload
+
+Cross-platform development
+
+Rich set of widgets
+
+Fast performance
+
+Open-source
+
+
+
+3. What is the widget tree in Flutter?
+It’s the hierarchy of widgets used to build the UI. The UI is a tree of nested widgets.
+
+
+4. Difference between StatelessWidget and StatefulWidget?
+
+StatelessWidget: UI doesn’t change during runtime.
+
+StatefulWidget: UI can change using setState().
+
+
+
+5. How does hot reload work in Flutter?
+It injects updated code into a running app without restarting it, preserving state and speeding up development.
+
+
+
+
+---
+
+Flutter Widgets & UI
+
+6. Commonly used layout widgets?
+
+Container, Row, Column, Expanded, Padding, Stack, SizedBox
+
+
+
+7. Use of Scaffold and AppBar?
+
+Scaffold: Provides a default structure for the app screen (like layout, FAB, drawer).
+
+AppBar: Provides a material design header for the app.
+
+
+
+8. How do you handle user input in Flutter?
+Using widgets like TextField, TextFormField, and managing input with controllers and validators.
+
+
+9. What are Expanded and Flexible used for?
+They control how child widgets grow and occupy available space in Row or Column.
+
+
+10. Explain the lifecycle of a Flutter widget.
+
+
+
+For StatefulWidget: initState() → build() → setState() → dispose()
+
+
+
+---
+
+Navigation
+
+11. Named vs unnamed routes?
+
+
+
+Named: Defined in route table and navigated using route name.
+
+Unnamed: Directly use Navigator.push() with a widget.
+
+
+12. Pass data between screens?
+Use constructor arguments or pass data through Navigator.push() with route settings.
+
+
+
+
+---
+
+Firebase Integration
+
+13. What services does Firebase provide?
+
+
+
+Firestore, Authentication, Hosting, Cloud Storage, Realtime DB, Analytics, etc.
+
+
+14. Read/write in Firestore:
+
+
+
+Read: FirebaseFirestore.instance.collection('users').get()
+
+Write: .add() or .set() methods
+
+
+15. Difference between Realtime DB and Firestore?
+
+
+
+Realtime DB: JSON tree, less structured
+
+Firestore: Document-based, more scalable and structured
+
+
+16. Authenticate users in Flutter using Firebase?
+Use firebase_auth package and methods like signInWithEmailAndPassword() or signInWithGoogle().
+
+
+
+
+---
+
+PWA Questions
+
+17. What makes a web app progressive?
+Features like offline access, push notifications, installability, and responsive design.
+
+
+18. Difference between web app and PWA?
+
+
+
+PWA works offline, can be installed, uses service workers
+
+Web app needs internet, runs in browser only
+
+
+19. How do PWAs work offline?
+They cache resources using service workers so users can access the app without the internet.
+
+
+20. Role of manifest.json?
+It defines app name, icons, theme, and installability options for PWAs.
+
+
+21. Ensure installable PWA?
+Provide a valid manifest.json and register a service worker with HTTPS hosting.
+
+
+22. Push notifications in PWA?
+Use service workers to listen for push events and display them using the showNotification() method.
+
+
+
+
+---
+
+Service Workers
+
+23. Lifecycle phases of a service worker?
+
+
+
+Install
+
+Activate
+
+Fetch (intercepts network requests)
+
+
+24. Caching in service workers?
+Use caches.open() to store assets and serve them from cache instead of the network.
+
+
+25. Cache-first vs network-first?
+
+
+
+Cache-first: Try cache first, then network
+
+Network-first: Try network first, fallback to cache if offline
+
+
+
+---
+
+Responsive UI/Frontend Frameworks
+
+26. What is Material Design?
+A design system by Google that provides guidelines and components for visually consistent apps.
+
+
+27. Benefits of Angular/React?
+
+
+
+Component-based architecture
+
+Fast rendering
+
+Reusability
+
+Large community support
+
+
+28. Ensure responsive app?
+Use MediaQuery, Flexible, LayoutBuilder, and percentage-based dimensions.
+
+
+29. Difference between MediaQuery and LayoutBuilder?
+
+
+
+MediaQuery: Gets screen size and orientation
+
+LayoutBuilder: Measures the space available to a widget
+
+
+
+---
+
+Deployment and Hosting
+
+30. Deploy Flutter web app?
+Build with flutter build web and host build/web on Firebase Hosting or GitHub Pages.
+
+
+31. What is static hosting? Examples?
+Serving fixed files (HTML, CSS, JS).
+Examples: GitHub Pages, Firebase Hosting, Netlify
+
+
+32. Why is SSL important in PWA?
+Service workers and push notifications require HTTPS for security.
+
+
+
+
+---
+
+Mini Project
+
+33. Problem your project solves?
+(Customize based on your app; e.g., “Helps convert sign language to speech for communication.”)
